@@ -1,0 +1,72 @@
+@import '../../../styles/variables.scss';
+
+.element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 280px;
+    height: 160px;
+    background-color: #382e59;
+    border-radius: 10px;
+    padding: 2em;
+    color: $white;
+
+    svg {
+        cursor: pointer;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    svg:hover {
+        color: #fd1374;
+    }
+
+    img {
+        max-width: 30px;
+    }
+
+    h3 {
+        font-family: $Karla;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: $Karla;
+        font-weight: 500;
+    }
+
+    &_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &_date {
+        color: #33927f;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    &_name {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: baseline;
+        p {
+            font-weight: 300;
+            margin: 0;
+            font-size: 1.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .element {
+      width: 100%;
+    }
+  }

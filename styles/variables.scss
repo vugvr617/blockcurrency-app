@@ -1,3 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
 
+//fonts
 $Poppins: "Poppins", sans-serif;
+$Karla: "Karla", sans-serif;
+
+//sizes
+$NavigationFontSize: 3rem;
+
+//colors
+$white: #fbfafb;
+$purple: #df4f76;
+$dark-bg: #2c1e36;
+$light-bg: #f4f5fd;
+$orange: #ff585f;
+$gradient: linear-gradient(90deg, rgba(223,79,118,1) 0%, rgba(255,88,95,1) 100%);
+
+//mixins
+@mixin alignitems {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}

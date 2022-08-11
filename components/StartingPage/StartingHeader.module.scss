@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.div {
+    width: 100%;
+    margin: auto;
+}
+
+.bglight {
+    background-color: $light-bg;
+    color: $dark-bg;
+}
+
+.bgdark {
+    background-color: $dark-bg;
+    color: $white;
+}
+
+.header {
+    font-size: $NavigationFontSize;
+    font-family: $Poppins;
+    font-weight: 500;
+
+    @include alignitems;    
+
+    &_logoright {
+        color: $purple;
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../../styles/variables.scss";
+
+.nav {
+  width: 20%;
+  height: 100%;
+  
+  &_light {
+    border-right: solid 0.5px #2c1e36b0;
+  }
+
+  &_dark {
+    border-right: solid 1px rgba(255, 255, 255, 0.089);
+  }
+}
+
+.innernav {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.8rem;
+
+  &_element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.1em 0;
+    width: 60%;
+    justify-content: space-evenly;
+    margin: 1em auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  &_active {
+    font-weight: 600;
+    border-radius: 15px;
+    background: $gradient;
+    font-size: 1.6rem;
+    color: $white !important;
+  }
+}
+
+.nav_bg_light {
+  color: $dark-bg;
+}
+
+.nav_bg_dark {
+  color: $white;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    width: 90%;
+    margin: auto;
+    border-right: 0px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.089);
+  }
+  .innernav_element {
+    margin: 2em auto;
+  }
+}

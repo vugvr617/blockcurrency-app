@@ -1,0 +1,138 @@
+@import "../../../styles/variables.scss";
+
+.main {
+  width: 80%;
+  padding: 3em;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .select {
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1.6rem;
+    background-color: #382e59;
+    color: $white;
+  }
+
+  &_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_dark {
+    color: $white;
+  }
+
+  &_light {
+    color: $dark-bg;
+  }
+}
+
+.biplus {
+  font-size: 30px;
+}
+
+.coins {
+  &_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+  }
+
+  &_add {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    height: 160px;
+    background-color: #382e59;
+    border-radius: 10px;
+
+    &_button {
+      cursor: pointer;
+      font-family: $Poppins;
+      background: none;
+      border: none;
+      color: $white;
+      font-size: x-large;
+      padding: 0;
+      display: block;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &_input_div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    height: 100%;
+
+    p {
+        margin: 0;
+        font-size: 1.6rem;
+        color: $white;
+    }
+
+    input {
+        border: none;
+        border-radius: 10px;
+        background-color: $dark-bg;
+        height: 35px;
+        font-size: 1.5rem;
+        padding: 0.5em;
+        color: $white;
+        font-family: $Karla;
+    }
+  }
+
+  &_input_add_button {
+    font-family: $Karla;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: $white;
+    border: none;
+    width: 50px;
+    background-color: #33927f;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1200px) {
+    .coins_div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .main_header {
+        flex-direction: column;
+    }
+    .coins_add {
+        width: 100%;
+    }
+    .coins_div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

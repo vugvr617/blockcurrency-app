@@ -1,0 +1,58 @@
+@import "../../../styles/variables.scss";
+
+.main {
+  width: 80%;
+  padding: 3em;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  &_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_dark {
+    color: $white;
+  }
+
+  &_light {
+    color: $dark-bg;
+  }
+}
+
+.coins {
+  &_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .coins_div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .main_header {
+        flex-direction: column;
+    }
+    .coins_div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

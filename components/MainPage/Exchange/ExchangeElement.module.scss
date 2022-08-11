@@ -1,0 +1,80 @@
+@import "../../../styles/variables.scss";
+
+.element {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 280px;
+  height: 160px;
+  background-color: #382e59;
+  border-radius: 10px;
+  padding: 2em;
+  color: $white;
+
+  img {
+    max-width: 30px;
+  }
+
+  h3 {
+    font-family: $Karla;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: $Karla;
+    font-weight: 500;
+  }
+
+  &_inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  input {
+    background-color: $dark-bg;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 0.3em;
+    color: $white;
+    font-family: $Karla;
+    font-size: 1.7rem;
+    padding-left: 0.5em;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &_name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+    p {
+      font-weight: 300;
+      margin: 0;
+      font-size: 1.8rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.input_div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+  .element {
+    width: 100%;
+  }
+}
